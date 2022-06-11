@@ -6,7 +6,7 @@ Array.prototype.myMap = function (callback) {
     return output;
   };
   
-  Array.prototype.myFilter = function (callback) {
+Array.prototype.myFilter = function (callback) {
     const output = [];
     for (let i = 0; i < this.length; i++) {
       if (callback(this[i], i, this) === true) {
@@ -16,7 +16,7 @@ Array.prototype.myMap = function (callback) {
     return output;
   };
   
-  Array.prototype.myReduce = function (callback, initialValue) {
+Array.prototype.myReduce = function (callback, initialValue) {
     let accumalator = initialValue;
     for (let i = 0; i < this.length; i++) {
       if (i === 0 && initialValue === undefined) {
