@@ -1,0 +1,21 @@
+#root {
+    background-color: lightgrey;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: right;
+}
