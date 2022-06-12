@@ -5,17 +5,11 @@ const TipCalculator = () => {
  const [tipPercentage, setTipPercentage] = useState(18);
  const [people, setPeople] = useState(1);
   
-  const onChangeBill = event => {
-    setBill(event.target.value);
-  }
+  const onChangeBill = event => setBill(event.target.value);
 
-  const onChangeTipPercentage = event => {
-    setTipPercentage(event.target.value);
-  }
+  const onChangeTipPercentage = event => setTipPercentage(event.target.value);
 
-  const onChangePeople = event => {
-    setPeople(event.target.value);
-  }
+  const onChangePeople = event => setPeople(event.target.value);
 
   const totalTip = (bill * tipPercentage) / 100;
   const perPersonTip = totalTip / people;
