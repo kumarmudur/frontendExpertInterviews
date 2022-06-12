@@ -9,7 +9,7 @@ const reducer = (state, { type, responseJSON, error }) => {
     case 'error':
       return { responseJSON: null, isLoading: false, error };
     default:
-      throw new Error('Unknow action type');
+      throw new Error('Unknown action type');
   }
 }
 
