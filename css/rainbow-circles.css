@@ -27,4 +27,41 @@
 }
 
 /* Solution 2 */
-  
+:root {
+    --circle-thickness:25px;
+}
+
+div {
+    border-radius: 50%;
+}
+
+#outer {
+    --orange-size: calc(var(--circle-thickness) * 8);
+
+    background-color: #ffa500;
+    width: var(--orange-size);
+    height: var(--orange-size);
+    border: var(--circle-thickness) solid #ff0000;
+    padding: var(--circle-thickness);
+}
+
+#middle {
+    --green-size: calc(var(--circle-thickness) * 4);
+
+    background-color: #008000;
+    width: var(--green-size);
+    height: var(--green-size);
+    border: var(--circle-thickness) solid #ffff00;
+    padding: var(--circle-thickness);
+}
+
+#inner {
+    --purple-size: calc(var(--circle-thickness) * 2);
+
+    background-color: #800080;
+    width: var(--purple-size);
+    height: var(--purple-size);
+    border: var(--circle-thickness) solid #0000ff;
+}
+
+
