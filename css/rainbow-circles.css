@@ -64,4 +64,24 @@ div {
     border: var(--circle-thickness) solid #0000ff;
 }
 
+/* Solution 3 */
+#inner {
+    --circle-thickness: 25px;
+    --purple-size: calc(var(--circle-thickness) * 2);
+    --offset: calc(var(--circle-thickness) *5 );
+
+    position: relative;
+    left: var(--offset);
+    top: var(--offset);
+    border-radius: 50%;
+    background-color: #800080;
+    width: var(--purple-size);
+    height: var(--purple-size);
+    box-shadow: 0 0 0 var(--circle-thickness) #0000ff,
+    0 0 0 calc(var(--circle-thickness) * 2) #008000,
+    0 0 0 calc(var(--circle-thickness) * 3) #ffff00,
+    0 0 0 calc(var(--circle-thickness) * 4) #ffa500,
+    0 0 0 calc(var(--circle-thickness) * 5) #ff0000;
+}
+
 
