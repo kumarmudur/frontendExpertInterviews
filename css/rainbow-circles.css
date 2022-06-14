@@ -84,4 +84,33 @@ div {
     0 0 0 calc(var(--circle-thickness) * 5) #ff0000;
 }
 
+/* Solution 4 */
+div {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#outer {
+    background-color: #ffa500;
+    width: 250px;
+    height: 250px;
+    border: 25px solid #ff0000;
+}
+
+#middle {
+    background-color: #008000;
+    width: 150px;
+    height: 150px;
+    border: 25px solid #ffff00;
+}
+
+#inner {
+    background-color: #800080;
+    width: 50px;
+    height: 50px;
+    border: 25px solid #0000ff;
+}
+
 
