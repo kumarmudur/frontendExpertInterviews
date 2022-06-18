@@ -4,7 +4,7 @@ Array.prototype.myMap = function (callback) {
       output.push(callback(this[i], i, this));
     }
     return output;
-  };
+};
   
 Array.prototype.myFilter = function (callback) {
     const output = [];
@@ -14,17 +14,17 @@ Array.prototype.myFilter = function (callback) {
       }
     }
     return output;
-  };
+};
   
 Array.prototype.myReduce = function (callback, initialValue) {
-    let accumalator = initialValue;
+    let accumulator = initialValue;
     for (let i = 0; i < this.length; i++) {
       if (i === 0 && initialValue === undefined) {
-        accumalator = this[i];
+        accumulator = this[i];
       } else {
-        accumalator = callback(accumalator, this[i], i, this);
+        accumulator = callback(accumulator, this[i], i, this);
       }
     }
-    return accumalator;
-  };
+    return accumulator;
+};
   
