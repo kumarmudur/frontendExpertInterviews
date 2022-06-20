@@ -1,0 +1,54 @@
+body {
+    background-color: lightgrey
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 4px 8px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+th[scope="row"] {
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+button, input[type="button"] {
+    cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #02203c;
+    color: white;
+    transition: 0.5s;
+    margin-top: 10px;
+    position: absolute;
+}
+
+button:first-of-type, input[type="button"]:first-of-type {
+    left: 16px;
+}
+
+button:last-of-type, input[type="button"]:last-of-type {
+    right: 16px;
+}
+
+button:disabled, input[type="button"]:disabled {
+    background-color: grey;
+}
