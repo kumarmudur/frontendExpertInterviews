@@ -9,7 +9,7 @@ const {JSDOM} = require('jsdom');
 const {readFileSync} = require('fs');
 const {expect} = require('chai');
 
-const html = readFileSync('data/index.html');
+const html = readFileSync('./blog-post.html');
 
 const resetDom = () => {
   const dom = new JSDOM(html, {
