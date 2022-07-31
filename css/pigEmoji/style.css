@@ -78,3 +78,103 @@
     border-radius: 50%;
     background-color: black;
 }
+
+
+/* Solution 2 */
+:root {
+    --main-color: #ffc0cb;
+  
+    --main-border: 5px solid black;
+    --secondary-border: 2px solid black;
+}
+  
+.head {
+    --head-size: 200px;
+  
+    position: relative;
+    width: var(--head-size);
+    height: var(--head-size);
+    border-radius: 50%;
+    border: var(--main-border);
+    margin-top: 20px;
+    background-color: var(--main-color);
+}
+  
+  
+.ear {
+    --ear-size: 50px;
+    --ear-horizontal-offset: 10px;
+    
+    position: absolute;
+    z-index: -1;
+    width: var(--ear-size);
+    height: var(--ear-size);
+    top: -10px;
+    border-radius: 50%;
+    border: var(--main-border);
+    background-color: var(--main-color);
+}
+  
+.ear:first-child {
+    left: var(--ear-horizontal-offset);
+}
+  
+.ear:nth-child(2) {
+    right: var(--ear-horizontal-offset);
+}
+  
+.eye {
+    --eye-size: 50px;
+    --eye-horizontal-offset: 30px;
+    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    width: var(--eye-size);
+    height: var(--eye-size);
+    border: var(--secondary-border);
+    border-radius: 50%;
+    background-color: white;
+}
+  
+.eye:first-child {
+    left: var(--eye-horizontal-offset);
+}
+  
+.eye:nth-child(2) {
+    right: var(--eye-horizontal-offset);
+}
+  
+.pupil {
+    --pupil-size: 50%;
+    
+    width: var(--pupil-size);
+    height: var(--pupil-size);
+    border-radius: 50%;
+    background-color: black;
+}
+  
+.nose {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: var(--secondary-border);
+    border-radius: 35%;
+    background-color: #f57187;
+}
+  
+.nostril {
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: black;
+}
+
