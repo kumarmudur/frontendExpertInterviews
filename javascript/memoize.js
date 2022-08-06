@@ -32,8 +32,8 @@ function memoize(callback, resolver) {
     }
   
     return memoized;
-  }
+}
   
-  // Do not edit the line below.
-  exports.memoize = memoize;
+// Do not edit the line below.
+exports.memoize = memoize;
   
