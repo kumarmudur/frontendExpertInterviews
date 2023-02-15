@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search City</title>
+    <link href="https://cdn.jsdelivr.net/npm/h8k-design@latest/dist/index.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/h8k-design@latest/dist/assets/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.esm.js"
+            type="module"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.js"></script>
+</head>
+
+<body>
+<!--HTML content goes here-->
+<h8k-navbar header="Stack Operation"></h8k-navbar>
+<div class="w-50 mx-auto mt-40">
+    <section class="layout-row align-items-start justify-content-center">
+        <input type="text" class="input large" id="input" data-testid="input">
+        <button type="submit" class="flat my-0" id="pushButton" data-testid="pushButton">Push</button>
+        <button type="submit" class="flat my-0" id="popButton" data-testid="popButton">Pop</button>
+        <button type="submit" class="flat my-0" id="emptyButton" data-testid="emptyButton">Empty</button>
+        <button type="submit" class="flat my-0" id="peekButton" data-testid="peekButton">Peek</button>
+        <button type="submit" class="flat my-0" id="swapButton" data-testid="swapButton">Swap</button>
+    </section>
+
+    <section class="card text-center mt-20 stack-board w-40 mx-auto">
+        <table>
+            <tr><td class="stack-item" id="5" data-testid="5"></td></tr>
+            <tr><td class="stack-item" id="4" data-testid="4"></td></tr>
+            <tr><td class="stack-item" id="3" data-testid="3"></td></tr>
+            <tr><td class="stack-item" id="2" data-testid="2"></td></tr>
+            <tr><td class="stack-item" id="1" data-testid="1"></td></tr>
+            <tr><td class="text-center">Stack Board</td></tr>
+        </table>
+    </section>
+</div>
+
+</body>
+<!-- HMR and test infrastructure - DO NOT EDIT -->
+<script src="./bundle.js"></script>
+</html>
