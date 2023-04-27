@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Category from './Category';
+
 const QUESTIONS_API_BASE_URL = 'https://api.frontendexpert.io/api/fe/questions';
 const SUBMISSIONS_API_BASE_URL = 'https://api.frontendexpert.io/api/fe/submissions';
 
