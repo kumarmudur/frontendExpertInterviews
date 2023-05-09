@@ -9,7 +9,7 @@ export default function QuestionList() {
   const [questions, submissions] = useQuestionsAndSubmissions();
   const questionsByCategory = getQuestionsByCategory(questions);
   const submissionsByQuestion = getSubmissionsByQuestion(submissions);
-  const categories = Object.keys(questionsByCategory;)
+  const categories = Object.keys(questionsByCategory);
 
   return (
     <>
